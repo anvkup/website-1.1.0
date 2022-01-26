@@ -2,7 +2,6 @@
   "name": "website-1.1.0",
   "version": "0.0.0",
   "private": true,
- 
   "scripts": {
     "start": "nodemon index.js",
     "tailwind:css": "postcss public/styles/tailwind.css -o public/styles/style.css"
