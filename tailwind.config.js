@@ -1,9 +1,14 @@
 module.exports = {
-  content:[
-    './views/*.html', 
-   ],
+  content: [
+    './views/*.html',
+  ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'signature': ['Brittany Signature', 'sans-serif']
+
+      }
+    },
   },
   plugins: [
     require('tailwindcss'),

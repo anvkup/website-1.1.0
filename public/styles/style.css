@@ -567,6 +567,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .align-middle {
   vertical-align: middle;
 }
+.font-signature {
+  font-family: Brittany Signature, sans-serif;
+}
 .font-serif {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
@@ -595,11 +598,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@import url('http://fonts.cdnfonts.com/css/brittany-signature');
+
 .hover\:h-12:hover {
   height: 3rem;
 }
+
 .hover\:text-xl:hover {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-
