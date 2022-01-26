@@ -1,11 +1,11 @@
 module.exports = {
-  content: ["*"],
+  content: [],
   theme: {
-    extend: {
-      fontFamily: {
-        signature: ['Brittany Signature']
-      }
-    },
-    plugins: [],
+    extend: {},
   },
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+  ],
 }
+
