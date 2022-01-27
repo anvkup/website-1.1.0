@@ -466,19 +466,25 @@ Ensure the default browser behavior of the `hidden` attribute.
 .flex {
   display: flex;
 }
+.h-screen {
+  height: 100vh;
+}
 .h-32 {
   height: 8rem;
 }
 .h-10 {
   height: 2.5rem;
 }
-.h-1 {
-  height: 0.25rem;
+.w-screen {
+  width: 100vw;
 }
 .w-min {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
+}
+.w-1\/2 {
+  width: 50%;
 }
 .max-w-max {
   max-width: -webkit-max-content;
@@ -509,6 +515,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .flex-wrap {
   flex-wrap: wrap;
 }
+.content-center {
+  align-content: center;
+}
 .items-center {
   align-items: center;
 }
@@ -523,11 +532,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: calc(5rem * var(--tw-space-x-reverse));
   margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
 }
-.space-x-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -537,17 +541,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 .rounded-xl {
   border-radius: 0.75rem;
 }
-.bg-amber-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 191 36 / var(--tw-bg-opacity));
-}
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
+.bg-amber-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 191 36 / var(--tw-bg-opacity));
 }
 .p-4 {
   padding: 1rem;
@@ -566,10 +566,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .p-6 {
   padding: 1.5rem;
-}
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 .pt-8 {
   padding-top: 2rem;
